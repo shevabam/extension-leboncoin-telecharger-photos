@@ -10,6 +10,7 @@ L'extension **Télécharger photos annonce Leboncoin** est disponible sur les na
 
 * [Google Chrome](https://chromewebstore.google.com/detail/t%C3%A9l%C3%A9charger-photos-annonc/bghlaihhogfmfmkgcehemfokfkanjbjb?hl=fr)
 * [Vivaldi (Chrome Web Store)](https://chromewebstore.google.com/detail/t%C3%A9l%C3%A9charger-photos-annonc/bghlaihhogfmfmkgcehemfokfkanjbjb?hl=fr)
+* [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/t%C3%A9l%C3%A9charger-photos-annonc/gjjohabaahnldaakhiiapjjgdichgcgk)
 
 
 # Utilisation
