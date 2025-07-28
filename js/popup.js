@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
         var currentTab = tabs[0];
         var currentTabUrl = currentTab.url;
 
-
         chrome.scripting.executeScript({
             target: { tabId: currentTab.id },
             function: function() {
@@ -25,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var doc = parser.parseFromString(pageSource, 'text/html');
 
 
-            if (!doc.querySelector("#mainContent article div[data-qa-id='adview_spotlight_description_container']")) {
+            if (!doc.querySelector("#mainContent article div[data-qa-id='adview_description_container']")) {
                 render('<div class="alert alert-warning">Vous devez être sur une annonce pour pouvoir télécharger les photos !</div>');
                 notif('lbc-dl-photos-no-result', 'warning', "Télécharger photos annonce Leboncoin", "Vous devez être sur une annonce !");
                 return;
@@ -69,8 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                     showPhotos(photos);
                                 }
-
-
                             }
                         }
                     }
@@ -83,8 +80,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
 
-
-
             
             // Bouton Tout télécharger
             document.getElementById("downloadBtn").addEventListener("click", async() => {
@@ -95,10 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     notif('lbc-dl-photos-error', 'error', 'Télécharger photos annonce Leboncoin', err.message);
                 }
             });
-
-
         });
-    
 
     });
 });
