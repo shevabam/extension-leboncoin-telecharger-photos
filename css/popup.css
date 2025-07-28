@@ -2,7 +2,6 @@
     --main-color: #ec5a13;    
 }
 
-
 body.lbc-dl-photos {
     font-size: 14px;
     font-family: sans-serif;
@@ -91,10 +90,17 @@ button#downloadBtn:focus {
     padding: 8px;
     text-align: center;
     border-radius: 5px;
+    font-size: 12px;
 }
 .lbc-dl-photos footer a {
     color: #7C7C7C;
-    font-size: 11px;
+    font-size: 12px;
+}
+.lbc-dl-photos footer a:hover {
+    text-decoration: none;
+}
+.lbc-dl-photos span.bullet {
+    padding: 0 .5rem;
 }
 
 
