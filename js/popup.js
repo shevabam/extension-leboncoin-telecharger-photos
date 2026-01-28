@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var doc = parser.parseFromString(pageSource, 'text/html');
 
 
-            if (!doc.querySelector("#mainContent article div[data-qa-id='adview_description_container']")) {
+            if (!doc.querySelector("#mainContent [data-qa-id='adview_description_container']")) {
                 render('<div class="alert alert-warning">Vous devez être sur une annonce pour pouvoir télécharger les photos !</div>');
                 notif('lbc-dl-photos-no-result', 'warning', "Télécharger photos annonce Leboncoin", "Vous devez être sur une annonce !");
                 return;
